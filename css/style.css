@@ -1,0 +1,143 @@
+body{
+    font: 16px arial,helvetica,sans-serif;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+/* Teksty */
+h1{
+    width: 190px;
+    color: #000 !important;
+    font-size: 3em;
+    font-weight: 400;
+    text-decoration: none !important;
+    align-content: center;
+    text-align: center;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Kontenery */
+
+#container-title {
+    width: 50%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    text-align: center;
+}
+
+#main-photo{
+    min-height: 350px;
+    margin: 10px 10px;
+    align-content: center;
+    text-align: center;
+}
+
+#main-photo2{
+    position: relative;
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    display: none;
+}
+
+@media only screen and (max-width: 768px){
+    #main-photo2{
+        width: 75%;
+    }
+}
+
+#thumbnails{
+    margin: 10px 10px;
+    align-content: center;
+    text-align: center;
+}
+
+figure {
+    display: inline-block !important;
+    width: 148px !important;
+}
+
+.clearfix{
+    clear: both;
+}
+
+@media only screen and (max-width: 1060px){
+    #main-photo{
+        display: none;
+    }
+    #thumbnails{
+        display: none;
+    }
+    #main-photo2{
+        display: block;
+    }
+}
+
+/* Grafiki */
+
+#main-photo2 img:first-child {
+    position: relative;
+    left: 0%;
+    top: 0;
+}
+
+.image-gallery{
+    position: absolute;
+    left: -100%;
+    top: 0;
+}
+
+/* Buttons */
+
+.next{
+    position: fixed;
+    top: 30%;
+    right: 7%;
+    cursor: pointer;
+    z-index: 20;
+}
+
+@media only screen and (max-width: 768px){
+    .next{
+        right: 3%;
+    }
+}
+
+.previous{
+    position: fixed;
+    cursor: pointer;
+    top: 30%;
+    left: 7%;
+    z-index: 20;
+}
+
+@media only screen and (max-width: 768px){
+    .previous{
+        left: 3%;
+    }
+}
+
+#logo{
+    margin-bottom: 25px;
+    position: relative;
+    display: inline;
+    align-content: center;
+    text-align: center;
+    margin-right: 10px;
+}
+
+img{
+    max-width: 100%; 
+    border: 0;
+}
+
+a img:hover{
+    border-bottom: 2px solid red;
+}
+
